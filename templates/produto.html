@@ -1,0 +1,63 @@
+{{ define "Produto" }}
+{{ template "_head" }}
+{{ template "_menu" }}
+
+<div class="container">
+
+    <body>
+        <div class="card mb-4" style="border-color: var(--neon-pink);">
+            <div class="container text-center">
+                <h2 style="color: var(--neon-pink);">NEW_ITEM.EXE</h2>
+                <p class="lead" style="color: var(--neon-cyan);">>> ENTER_DETAILS_BELOW_</p>
+            </div>
+        </div>
+
+        <div class="card" style="border-color: var(--neon-green);">
+
+        <form method="POST" action="insert">
+            <div class="row mb-3">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" name="descricao" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="preco">Preço:</label>
+                        <input type="number" name="preco" class="form-control" step="0.01">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" name="quantidade" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" value="salvar" class="btn btn-success">SAVE_DATA</button>
+            <a class="btn btn-info" href="/">ABORT</a>
+        </form>
+        </div>
+    </body>
+</div>
+
+</html>
+
+{{ end }}

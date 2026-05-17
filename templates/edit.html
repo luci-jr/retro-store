@@ -1,0 +1,83 @@
+{{ define "Edit" }}
+{{ template "_head" }}
+{{ template "_menu" }}
+
+<div class="container">
+
+    <body>
+        <div class="card mb-4" style="border-color: var(--neon-cyan);">
+            <div class="container text-center">
+                <h2 style="color: var(--neon-cyan);">UPDATE_NODE.EXE</h2>
+                <p class="lead" style="color: var(--neon-pink);">>> MODIFY_PARAMETERS_</p>
+            </div>
+        </div>
+
+        <div class="card" style="border-color: var(--neon-cyan);">
+
+        <form id="formEdit" method="POST" action="update">
+            <input type="hidden" name="id" value="{{.Id}}">
+            <div class="row mb-3">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" value="{{.Nome}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" name="descricao" value="{{.Descricao}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="preco">Preço:</label>
+                        <input type="number" name="preco" value="{{.Preco}}" class="form-control" step="0.01">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-sm-2">
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" name="quantidade" value="{{.Quantidade}}" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" onclick="confirmUpdate()" class="btn btn-success">OVERWRITE_DATA</button>
+            <a class="btn btn-info" href="/">ABORT</a>
+        </form>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function confirmUpdate() {
+            Swal.fire({
+                title: 'Tem certeza?',
+                text: "Deseja salvar as alterações deste produto?",
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#198754',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Sim, atualizar!',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    document.getElementById('formEdit').submit();
+                }
+            });
+        }
+    </script>
+</div>
+
+</html>
+
+{{ end }}

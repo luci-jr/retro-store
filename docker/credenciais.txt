@@ -1,0 +1,8 @@
+| Campo    | Valor       |
+| -------- | ----------- |
+| Host     | localhost   |
+| Port     | 5432        |
+| Database | retro_store |
+| Username | admin       |
+| Password | admin123    |
+| -------- | ----------- |
