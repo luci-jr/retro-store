@@ -2,7 +2,7 @@
 
 <img src="https://raw.githubusercontent.com/marcusolsson/gophers/master/pixel_gopher.png" width="100" alt="Pixel Gopher">
 
-# 🕹️ R E T R O   S T O R E 🕹️
+# 🕹️ R E T R O - S T O R E 🕹️
 **[ WEB APP EDITION ]**
 
 <br>
@@ -159,6 +159,22 @@ $ go run main.go
 - [x] Interface retro 8-bit
 - [x] Integração PostgreSQL
 - [x] Arquitetura MVC
+
+<br>
+
+### 📸 Screenshots
+
+#### 📊 Tela Principal (Inventário)
+![Tela Principal](images/screenshots/print_inventario.png)
+
+#### 📝 Tela de Edição
+![Tela de Edição](images/screenshots/print_edicao.png)
+
+#### ⚠️ Confirmação de Edição
+![Confirmação de Edição](images/screenshots/print_modal_editar.png)
+
+#### 🗑️ Confirmação de Exclusão
+![Confirmação de Exclusão](images/screenshots/print_modal_excluir.png)
 
 <br>
 
