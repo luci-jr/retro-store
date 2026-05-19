@@ -33,6 +33,7 @@ A **Retro Store** é uma aplicação web desenvolvida em **Go (Golang)** com foc
 - Rotas HTTP
 - Templates HTML
 - Estruturação backend sem frameworks
+- Pequenas interações no Frontend com Vanilla JS
 
 Toda a interface foi criada com inspiração em:
 - 🎮 Arcades dos anos 80
@@ -53,7 +54,7 @@ Toda a interface foi criada com inspiração em:
 | ⚡ CAMADA | 🎯 TECNOLOGIA |
 | :--- | :--- |
 | 👨‍💻 Linguagem | Go (Golang) |
-| 🌐 Frontend | HTML5 + CSS3 |
+| 🌐 Frontend | HTML5 + CSS3 + Vanilla JS |
 | 🎨 Interface | Retro Pixel UI |
 | 🗄️ Banco | PostgreSQL |
 | 📦 Container | Docker |
